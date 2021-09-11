@@ -3,7 +3,7 @@
     <v-app-bar app color="#6A76AB" dark>
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
-      <v-app-bar-title>Title</v-app-bar-title>
+      <v-app-bar-title>Sandbox</v-app-bar-title>
 
       <v-spacer></v-spacer>
 
@@ -12,8 +12,8 @@
       </v-btn>
     </v-app-bar>
     <div v-show="showSearch">
-       <Search />
-       </div>
+      <Search />
+    </div>
 
     <v-main>
       <router-view />
@@ -27,7 +27,7 @@ import Search from "./components/Search.vue";
 
 export default Vue.extend({
   name: "App",
-   components: {
+  components: {
     Search
   },
 
@@ -35,8 +35,8 @@ export default Vue.extend({
     showSearch: false
   }),
   methods: {
-    toggleSearch(){
-      this.showSearch = !this.showSearch
+    toggleSearch() {
+      this.showSearch = !this.showSearch;
     }
   }
 });
